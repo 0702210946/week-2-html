@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rainbow Website</title>
+  </head>
+  <style>
+  body {
+    width: 100%;
+    height: 600px;
+    background-image: url(1721123631027.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .div-1 {
+    background: rgb(0 100 30);
+    text-align: center;
+  }
+  .div-1 ul {
+    list-style: none;
+    display: inline-flex;
+  }
+  .div-1 ul li {
+    margin: 30px;
+    padding: 5px;
+    width: 150px;
+    height: 20pxpx;
+    transition: 0.5s;
+  }
+  .div-1 ul li:hover {
+    color: orangered;
+    cursor: pointer;
+  }
+.acttive, .div-1 ul li:hover {
+  background: aqua;
+  border-radius: 3px;
+}
+.submenu {
+  display: none;
+}
+.div-1 ul li:hover .submenu  {
+  display: block;
+  position: absolute;
+  background: rgb(40, 40, 20);
+  margin-top: 5px;
+  margin-left: 15px;
+}
+.div-1 ul li:hover .submenu ul {
+  display: block;
+  margin: 10px;
+}
+.div-1 ul li:hover .submenu ul li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: dotted;
+  background: transparent;
+}
+.div-1 ul li:hover .submenu ul li:last-child {
+border-bottom: none;
+}
+  </style>
+  <body>
+   <div class="div-1">
+    <ul>
+      <li class="active"><a href="#"></a>HOME</li>
+      <li><a href="#"></a>HOME</li>
+      <li><a href="#"></a>HOME
+      <div class="submenu">
+        <ul>
+          <li>BB</li>
+          <li>BB</li>
+          <li>BB</li>
+          <li>BB</li>
+          <li>BB</li>
+          <li>BB</li>
+        </ul>
+      </div>
+      </li>
+      <li><a href="#"></a>HOME
+        <div class="submenu">
+          <ul>
+            <li>BB</li>
+            <li>BB</li>
+            <li>BB</li>
+            <li>BB</li>
+            <li>BB</li>
+            <li>BB</li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#"></a>HOME</li>
+      <li><a href="#"></a>HOME</li>
+    </ul>
+   </div><br><br>
+   <div>
+  
+   </div>
+  </body>
+</html>
